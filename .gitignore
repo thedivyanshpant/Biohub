@@ -1,0 +1,120 @@
+# ==============================================================================
+# Biohub 3D Cell Tracking — Git Ignore Configuration
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+# 1. Datasets & Raw Microscopy Volumes (Strict Exclusion)
+# ------------------------------------------------------------------------------
+database/
+*.zarr/
+*.zarr
+*.geff/
+*.geff
+*.tif
+*.tiff
+*.h5
+*.hdf5
+*.nd2
+*.czi
+
+# ------------------------------------------------------------------------------
+# 2. Model Checkpoints & Large Weights (External Download Required)
+# ------------------------------------------------------------------------------
+*.pt
+*.pth
+*.ckpt
+*.bin
+*.onnx
+*.safetensors
+kaggle_artifacts/
+Submission1/checkpoints/*.pth
+Submission1/checkpoints/*.pt
+Submission1/kaggle_support_pack/repo/weights/
+**/weights/**/*.pth
+**/weights/**/*.pt
+
+# ------------------------------------------------------------------------------
+# 3. Large Caches, Data Dumps & Intermediate Features
+# ------------------------------------------------------------------------------
+*.pkl
+*.pickle
+step3_data_cache.pkl
+metadata_cache.pt
+detection_features.csv
+cell_motion_statistics.csv
+checkpoint_cache.json
+
+# ------------------------------------------------------------------------------
+# 4. Generated Predictions, Large Logs & JSONL Shards
+# ------------------------------------------------------------------------------
+submission.csv
+submission_*.csv
+**/working/
+**/predictions/
+*.jsonl
+*.log
+exp1_results.csv
+exp2_results.csv
+
+# ------------------------------------------------------------------------------
+# 5. Offline Wheel Archives & Binary Bundles
+# ------------------------------------------------------------------------------
+kaggle_wheels/
+kaggle_source.tar.gz
+**/wheels/
+*.whl
+*.tar.gz
+*.tar
+*.zip
+*.gz
+
+# ------------------------------------------------------------------------------
+# 6. Python Bytecode, Caching & Environment Artifacts
+# ------------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Jupyter Notebook Checkpoints & Backups
+.ipynb_checkpoints/
+*.ipynb.bak
+*.bak
+*~
+*.tmp
+
+# Operating System Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db

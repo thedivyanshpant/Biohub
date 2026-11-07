@@ -1,0 +1,99 @@
+{
+  "hardware": {
+    "device_name": "NVIDIA A100 80GB PCIe",
+    "total_vram_gib": 79.1,
+    "allocated_cluster_gpus": "8 x NVIDIA A100 80GB across 4 nodes"
+  },
+  "benchmarks": [
+    {
+      "shape": [
+        64,
+        256,
+        256
+      ],
+      "batch_size": 1,
+      "base_channels": 16,
+      "step_time_ms": 84.87,
+      "peak_vram_gib": 2.43,
+      "throughput_vols_sec": 11.78
+    },
+    {
+      "shape": [
+        64,
+        256,
+        256
+      ],
+      "batch_size": 2,
+      "base_channels": 16,
+      "step_time_ms": 170.05,
+      "peak_vram_gib": 4.84,
+      "throughput_vols_sec": 11.76
+    },
+    {
+      "shape": [
+        64,
+        256,
+        256
+      ],
+      "batch_size": 4,
+      "base_channels": 16,
+      "step_time_ms": 338.76,
+      "peak_vram_gib": 9.65,
+      "throughput_vols_sec": 11.81
+    },
+    {
+      "shape": [
+        64,
+        256,
+        256
+      ],
+      "batch_size": 2,
+      "base_channels": 32,
+      "step_time_ms": 248.83,
+      "peak_vram_gib": 9.58,
+      "throughput_vols_sec": 8.04
+    },
+    {
+      "shape": [
+        64,
+        128,
+        128
+      ],
+      "batch_size": 4,
+      "base_channels": 16,
+      "step_time_ms": 84.39,
+      "peak_vram_gib": 2.43,
+      "throughput_vols_sec": 47.4
+    },
+    {
+      "shape": [
+        64,
+        128,
+        128
+      ],
+      "batch_size": 8,
+      "base_channels": 16,
+      "step_time_ms": 169.09,
+      "peak_vram_gib": 4.84,
+      "throughput_vols_sec": 47.31
+    },
+    {
+      "shape": [
+        32,
+        64,
+        64
+      ],
+      "batch_size": 16,
+      "base_channels": 16,
+      "step_time_ms": 43.84,
+      "peak_vram_gib": 1.23,
+      "throughput_vols_sec": 365.0
+    }
+  ],
+  "full_volume_epoch_times_19900_frames": {
+    "1_GPU (A100 80GB)": "28.1 minutes",
+    "2_GPUs (Node rpgpu018)": "14.4 minutes",
+    "4_GPUs (2 Nodes)": "7.4 minutes",
+    "8_GPUs (Full Cluster Allocation)": "3.8 minutes"
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "intensity_summary": {
+    "global_min_median": 8.0,
+    "global_min_min": 0.0,
+    "global_max_median": 2501.0,
+    "global_max_max": 6520.0,
+    "global_mean_median": 223.89697265625,
+    "global_mean_min": 50.52304458618164,
+    "global_mean_max": 2130.65576171875,
+    "global_std_median": 219.2515106201172,
+    "percentiles_aggregate": {
+      "p1_median": 27.0,
+      "p5_median": 34.0,
+      "p10_median": 40.0,
+      "p25_median": 63.0,
+      "p50_median": 130.0,
+      "p75_median": 290.0,
+      "p90_median": 522.0,
+      "p95_median": 688.0,
+      "p99_median": 1053.0,
+      "p99_5_median": 1164.0,
+      "p99_9_median": 1433.0
+    },
+    "temporal_drift": {
+      "mean_drift_median": 1.72265625,
+      "relative_drift_median": 0.023461970245029957,
+      "relative_drift_p10": -0.6366670585785997,
+      "relative_drift_p90": 1.7883963391582325,
+      "max_bleaching_loss_pct": -81.12359004513866
+    },
+    "axial_variation": {
+      "z_attenuation_ratio_median": 1.088517189025879,
+      "z_attenuation_ratio_p10": 0.427454024553299,
+      "z_attenuation_ratio_p90": 3.2218944549560566
+    },
+    "intensity_regimes": {
+      "num_datasets_under_100_mean": 43,
+      "num_datasets_100_to_500_mean": 101,
+      "num_datasets_over_500_mean": 55
+    }
+  },
+  "morphology_summary": {
+    "total_cells_analyzed": 2452,
+    "xy_radius_vox_median": 7.0,
+    "xy_radius_vox_mean": 6.866231647634584,
+    "xy_diameter_um_median": 5.6875,
+    "xy_diameter_um_mean": 5.5788132137031,
+    "xy_diameter_um_p10": 4.0625,
+    "xy_diameter_um_p90": 6.5,
+    "z_radius_vox_median": 3.0,
+    "z_diameter_um_median": 9.75,
+    "z_diameter_um_mean": 11.19473898858075,
+    "sbr_median": 1.3587854640532904,
+    "sbr_mean": 1.4998918375050518,
+    "contrast_median": 0.35878546405329037,
+    "contrast_mean": 0.49989183750505184,
+    "contrast_p10": 0.09612040653956823,
+    "contrast_p90": 1.118258642765685
+  },
+  "appearance_dynamics": {
+    "total_edges_analyzed": 1908,
+    "patch_ncc_median": 0.7615628242492676,
+    "patch_ncc_mean": 0.7029303100364126,
+    "patch_ncc_p10": 0.39069637954235076,
+    "patch_ncc_p90": 0.930646401643753,
+    "rel_center_intensity_delta_median": 0.05901629655895868,
+    "rel_center_intensity_delta_p90": 0.1689669402689231
+  }
+}

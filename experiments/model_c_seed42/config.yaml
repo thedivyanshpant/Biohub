@@ -1,0 +1,23 @@
+det_loss_weight: 1.0
+det_neg_weight: 0.01
+downsample:
+- 1
+- 4
+- 4
+effective_batch_size: 16
+epochs: 50
+lr: 0.0001
+model: TemporalUNet3D + SimpleNodeTransformer
+optimizer: AdamW
+per_gpu_batch_size: 4
+pool_kernel_um: 5.0
+seed: 42
+test_leakage_volumes: 0
+training_volumes: 187
+unet_layers:
+- 32
+- 64
+- 128
+unet_out_channels: 32
+validation_volumes: 8
+world_size: 4

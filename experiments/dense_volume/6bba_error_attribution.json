@@ -1,0 +1,32 @@
+{
+  "motion_tight": {
+    "total": 65184,
+    "tp": 1071,
+    "fp": 83,
+    "spurious": 64030
+  },
+  "motion_relaxed": {
+    "total": 1994,
+    "tp": 22,
+    "fp": 25,
+    "spurious": 1947
+  },
+  "gap1_synthetic": {
+    "total": 658,
+    "tp": 9,
+    "fp": 4,
+    "spurious": 645
+  },
+  "gap2_synthetic": {
+    "total": 180,
+    "tp": 0,
+    "fp": 0,
+    "spurious": 180
+  },
+  "safe_division": {
+    "total": 96,
+    "tp": 0,
+    "fp": 3,
+    "spurious": 93
+  }
+}

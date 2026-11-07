@@ -1,0 +1,30 @@
+experiment: exp00_baseline
+description: "Faithful reproduction of competition baseline: downsampled uniform filter + percentile thresholding + Hungarian bipartite tracking"
+
+data:
+  database_dir: "database"
+  test_pairs:
+    - name: "44b6_0113de3b"
+      zarr_path: "database/test/44b6_0113de3b.zarr"
+      geff_path: "database/train/44b6_0113de3b.geff"
+    - name: "44b6_0b24845f"
+      zarr_path: "database/test/44b6_0b24845f.zarr"
+      geff_path: "database/train/44b6_0b24845f.geff"
+    - name: "6bba_05b6850b"
+      zarr_path: "database/test/6bba_05b6850b.zarr"
+      geff_path: "database/train/6bba_05b6850b.geff"
+    - name: "6bba_05db0fb1"
+      zarr_path: "database/test/6bba_05db0fb1.zarr"
+      geff_path: "database/train/6bba_05db0fb1.geff"
+
+algorithm:
+  downsample: 4
+  filter_size: 3
+  percentile: 90
+  max_link_distance: 15.0 # um
+  scale: [1.625, 0.40625, 0.40625] # um/voxel (Z, Y, X)
+
+evaluation:
+  match_distance: 7.0 # um
+  adjustment_alpha: 0.1
+  division_weight: 0.1
